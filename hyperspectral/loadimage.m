@@ -1,0 +1,1 @@
+a=multibandread('new.bil',[2000,500,87],'uint8',0,'bil','ieee-be');
