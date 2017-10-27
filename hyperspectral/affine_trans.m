@@ -1,9 +1,10 @@
 clear all
 close all
-a=imread('mine.jpg');
-a=double(a);
-%addpath('C:\Users\RISHABH JAIN\Downloads\study\anant\image processing\hyperspectral');
-%a=multibandread('new.bil',[2000,500,87],'uint16',0,'bil','ieee-be');
+%a=imread('mine.jpg');
+%a=double(a);
+addpath('C:\Users\RISHABH JAIN\Downloads\study\anant\image processing\hyperspectral');
+a=multibandread('new.bil',[2000,500,87],'uint16',0,'bil','ieee-be');
+a=a(1:1300,:,:);
 [x_dim, y_dim, spec_dim]=size(a);
 [mean_spec, covar, spec_matrix]=stat_rep(a);
 [eig_vec, diag_eigval]=eig(covar);

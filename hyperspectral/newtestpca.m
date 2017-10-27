@@ -1,7 +1,8 @@
 for k=spec_dim:-1:1
 %temp=rot_spec_matrix(k,:);
 %temp=affin_mat(k,:);
-temp=whitening_mat(k,:);
+%temp=whitening_mat(k,:);
+temp=abund_mat(k,:);
 temp2=zeros(x_dim,y_dim);
 for k=1:y_dim-1
     for l=1:x_dim
@@ -9,6 +10,6 @@ for k=1:y_dim-1
     end
 end
 imshow(temp2,[]);
-pause(1)
+pause(10)
 end
 imshow(temp3,[])
