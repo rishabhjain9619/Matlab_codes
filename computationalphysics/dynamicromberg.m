@@ -1,6 +1,6 @@
 m=input('enter the value of m');
 k=input('enter the value of k');
-t=zeros(k,k+1);
+t=zeros(k+1,k+1);
 area=0;
 f=@(x)1/(1+x^2);
 for c=m:m+k
@@ -15,11 +15,11 @@ end
 area=area-(f(a)/2+f(b)/2)*h;
 t(1,(c-m+1))=area;
 end
-for l=2:k
+for l=2:k+1
     for j=l:k+1
         t(l,j)=(4^(l-1)*t(l-1,j)-t(l-1,j-1))/(4^(l-1)-1);
     end
 end
 %this will be the error term
-atan(2)-t(k,k+1)
+t
 

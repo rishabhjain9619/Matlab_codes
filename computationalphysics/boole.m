@@ -1,6 +1,6 @@
 %clear all
 close all
-f=@(x)sin(x);
+f=@(x)log(sinh(cos((tan(x)))));
 %n=input('enter the number of values');
 a=input('enter the initial value');
 b=input('enter the final value');
@@ -10,7 +10,7 @@ k=0;
 %for n=10:10:1000
 %the value of n should be divisible by 4 for the logic to properly incorporate the
 %last term
-n=100;
+n=10000;
 area=0;
 h=(b-a)/n;
     for i=a:h:b

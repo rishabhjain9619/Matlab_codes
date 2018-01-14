@@ -1,6 +1,6 @@
 %clear all
 close all
-f=@(x)1/(1+x^2);
+f=@(x)log(sinh(cos((tan(x)))));
 %n=input('enter the number of values');
 a=input('enter the initial value');
 b=input('enter the final value');

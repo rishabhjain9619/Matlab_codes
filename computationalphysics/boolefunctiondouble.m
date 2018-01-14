@@ -1,8 +1,9 @@
-function [area]=functionsimpson(a,b)
-f=@(x)sin(pi*x^2/2);
+function [area]=functionboole(a,b,k)
+%f=@(x)log(x);
+f=k;
 area=0;
 k=0;
-n=10000;
+n=1000;
 area=0;
 h=(b-a)/n;
     for i=a:h:b

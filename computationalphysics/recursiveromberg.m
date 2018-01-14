@@ -15,13 +15,13 @@ for i=a:h:b
 end
 area=area-(f(a)/2+f(b)/2)*h;
 end
-
-function [area]=recursiveromberg(m,k)
+% initially , y is m+k
+function [area]=recursiveromberg(y,k)
 if(k==0)
-    area=rombergrule(m);
+    area=rombergrule(y);
     return
 else
-    area=(4^k*recursiveromberg(m+k,k-1)-recursiveromberg(m+k-1,k-1))/(4^k-1);
+    area=(4^k*recursiveromberg(y,k-1)-recursiveromberg(y-1,k-1))/(4^k-1);
     return
 end
 end

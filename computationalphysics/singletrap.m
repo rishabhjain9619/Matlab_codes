@@ -5,7 +5,6 @@ f=@(x)sin(x);
 area=0;
 a=input('enter the initial value');
 b=input('enter the final value');
-t=zeros(1,100);
 k=1;
 n=1000;
 area=0;

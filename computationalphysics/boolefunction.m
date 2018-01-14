@@ -1,14 +1,7 @@
-function [area]=functionsimpson(k)
-f=@(x)4./sqrt(1-(k*sin(x))^2);
-a=0;
-b=pi/2;
-%n=input('enter the number of values');
+function [area]=functionboole(a,b)
+f=@(x)sin(x)/x;
 area=0;
-%t=zeros(1,100);
 k=0;
-%for n=10:10:1000
-%the value of n should be divisible by 4 for the logic to properly incorporate the
-%last term
 n=10000;
 area=0;
 h=(b-a)/n;
