@@ -1,4 +1,4 @@
-%prin_comp_analysis;
+prin_comp_analysis;
 eigenvalues_covar=diag(diag_eigval);
 dimensions=zeros(spec_dim,1);
 netsum=sum(eigenvalues_covar);

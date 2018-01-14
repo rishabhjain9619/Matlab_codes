@@ -10,6 +10,6 @@ for k=1:y_dim-1
     end
 end
 imshow(temp2,[]);
-pause(10)
+pause(3)
 end
 imshow(temp3,[])
